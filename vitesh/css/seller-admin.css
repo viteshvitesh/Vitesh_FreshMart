@@ -1,0 +1,181 @@
+/* =========================================================
+   VITESH FRESH MART - Seller Hub & Admin Panel Styling
+   File: css/seller-admin.css
+========================================================= */
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.panel-title { font-size: 20px; font-weight: 800; }
+.panel-sub { font-size: 13px; color: var(--slate-500); margin-top: 2px; }
+
+.card-box {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.card-desc { font-size: 13px; color: var(--slate-500); margin-bottom: 16px; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.form-grid .full-width { grid-column: span 2; }
+.form-actions { display: flex; gap: 10px; }
+
+/* Tables */
+.table-responsive { overflow-x: auto; }
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+}
+
+.data-table th {
+  background: var(--slate-100);
+  padding: 10px 12px;
+  font-weight: 700;
+  color: var(--slate-700);
+  border-bottom: 2px solid var(--slate-200);
+}
+
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--slate-200);
+  vertical-align: middle;
+}
+
+.data-table tr:hover { background: var(--slate-50); }
+
+.status-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-tag.confirmed { background: var(--primary-light); color: var(--primary-dark); }
+.status-tag.pending { background: #fef3c7; color: #b45309; }
+.status-tag.shipped { background: #dbeafe; color: #1d4ed8; }
+.status-tag.delivered { background: #dcfce7; color: #15803d; }
+
+/* Admin Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.stat-icon-wrap.bg-green { background: var(--primary-light); color: var(--primary-dark); }
+.stat-icon-wrap.bg-blue { background: #eff6ff; color: #2563eb; }
+.stat-icon-wrap.bg-orange { background: var(--accent-light); color: var(--accent-orange); }
+.stat-icon-wrap.bg-purple { background: #f5f3ff; color: #7c3aed; }
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--slate-900);
+}
+
+.stat-label { font-size: 12px; color: var(--slate-500); }
+
+.admin-health-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  border: 1px solid var(--primary-border);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Order History Cards */
+.orders-list { display: flex; flex-direction: column; gap: 16px; }
+.order-history-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--slate-100);
+  margin-bottom: 12px;
+}
+
+.order-id-code {
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.order-timeline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--slate-50);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  margin: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.timeline-step { display: flex; align-items: center; gap: 5px; color: var(--slate-400); }
+.timeline-step.done { color: var(--primary-dark); }
+.timeline-step.active { color: var(--accent-orange); }

@@ -1,0 +1,13 @@
+/* =========================================================
+   VITESH FRESH MART - Master Stylesheet
+   File: css/style.css
+   Modular, clean, and separated into specialized stylesheets
+========================================================= */
+
+@import url("base.css");
+@import url("auth.css");
+@import url("header.css");
+@import url("products.css");
+@import url("cart-checkout.css");
+@import url("seller-admin.css");
+@import url("chatbot.css");
